@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+           
+            .time
+            {
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip
+            {
+                visibility: hidden;
+                width:70px;
+                color: whitesmoke;
+                border-radius: 10%;
+                text-align: center;
+                transition: 0.1s ease;
+                background-color:darkslategrey;
+                position: absolute;
+                bottom:120%;
+                margin-left: -40px;        
+            }
+            .time:hover .tooltip
+            {
+                visibility: visible;
+            }
+            .tooltip:after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 30%;
+                    margin-left: 10px;
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #111 transparent transparent transparent;
+            }
+            .col
+            {
+                float: left;
+                margin: 10px;
+                border: 4px;
+                width: 10%;
+            }
+            .row
+            {
+                margin:40px;
+            }
+         
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col"><b>Asian gpr</b></div>
+            <div class="col time first" >10:00<span class="tooltip">Rs.140 Soldout</span></div>
+            <div class="col time first">02:00<span class="tooltip">Rs.140 Soldout</span></div>
+            <div class="col time first">06:00<span class="tooltip">Rs.140 Few left</span></div>
+            <div class="col time first">09:00<span class="tooltip">Rs.140 Soldout</span></div> 
+        </div>
+        <br><br>
+        <hr>
+        <div class="row">
+            <div class="col"><b>Mallikarjuna</b></div>
+            <div class="col time first">10:00<span class="tooltip">Rs.100 Filling Fast</span></div>
+            <div class="col time first">02:00<span class="tooltip">Rs.140 </span></div>
+            <div class="col time first">06:00<span class="tooltip">Rs.140 Filling Fast</span></div>
+            <div class="col time first">09:00<span class="tooltip">Rs.140 Soldout</span></div>
+        </div>
+        <br><br>
+        <hr>
+        <div class="row">
+            <div class="col"><b>Prasads IMAX</b></div>   
+            <div class="col time first">10:00<span class="tooltip">Rs.150 Filling Fast</span></div>
+            <div class="col time first">02:00<span class="tooltip">Rs.140 Soldout</span> </div>
+            <div class="col time first">06:00<span class="tooltip">Rs.140 </span></div>
+            <div class="col time first">09:00<span class="tooltip">Rs.140 Filling Fast</span></div>
+            </div>
+            <br><br>
+           <hr>
+    
+        </div>
+    </body>
+</html>

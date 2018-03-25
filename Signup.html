@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+	<meta charset = "UTF-8">
+	<title> SignUp Page </title>
+	<script src = "valid.js"></script>
+	<link rel = "stylesheet" href = "signupstyle.css">
+    
+</head>
+
+<!--    "http://localhost:8080/vimal/IamAwesome"-->
+<!--    "http://localhost:8080/firstbackend/signup"-->
+<body>
+
+	<form name = "myform" action = "http://localhost:8080/firstbackend/signup" onsubmit = "return validate()" method = "get">
+		<fieldset>
+			<h2> SignUp </h2>
+            <p class = "lessgap">Please fill the details below</p>
+            <hr>
+			<p><span>First Name :</span>
+			<input type = "text" class = "input" name = "first" id = "firstName"></p>
+			<p><span>Last Name :</span>
+			<input type = "text" class = "input" name = "last"></p>
+			<p><span>Email-ID :</span>
+			<input type = "text" class = "input" name = "email"></p>
+			
+            <p><input type = "reset" class = "reset hov" name = "reset" value = "Reset">
+            <input type = "submit" class = "submit hov" name = "submit" value = "Next"></p>
+		</fieldset>
+	</form>
+
+</body>
+
+</html>

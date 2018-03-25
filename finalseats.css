@@ -1,0 +1,166 @@
+            td
+            {
+                border:1px solid black;
+                border-radius: 20%;
+                width:20px;
+                text-align: center;
+				padding:5px;
+                background-color: ghostwhite;
+                color: da
+                color: darkslategray;
+                
+            }
+            table
+            {
+                border-spacing:10px;
+	
+            }
+            body
+            {
+                    background: linear-gradient(to right, #ece9e6, #ffffff);
+            }
+		
+            .link:hover
+            {
+                background-color: darkturquoise;
+                color: cornsilk;
+            }
+            
+			
+            .cols
+            {
+                float: left;
+                margin-left: 2%;
+            }
+            .row
+            {
+				display: flex;
+                margin-left: 18%;
+                margin-top: 5%; 
+            }
+		
+			.row :: after {
+				display : block;
+				clear : both;
+				content : "";
+			}
+			.bclass
+			{
+				margin-top:1%;
+			}
+            .whole
+            {
+                margin-top: 8px;
+                border: 1px solid green;
+                padding-bottom: 30px;   
+                background: linear-gradient(to right, #3498db, #2c3e50); 
+
+
+                border-radius: 3px;
+                
+            }
+            .destination
+            {
+                 
+                background: linear-gradient(to left, #00bf8f, #136a8a);  
+                color: antiquewhite;
+                font-size: 50px;
+                padding: 10px;
+                border-radius: 3px;
+            }
+        
+            #promptbox
+				{
+				background-color:#f2f2f2;
+                display: none;
+                z-index: 1;
+				position: absolute;
+				left: 0;
+				right: 0;
+				border: 1px solid black;
+				/* margin: auto; */
+				border-radius: 2px;
+				height: 300px;
+				width: 28%;
+				min-width: 300px;
+            }
+    
+            #pheader
+            {
+                background-color: #454f52;
+                padding: 10px;
+                font-size: 25px;
+                text-align: center;
+                color: azure;
+            }
+			
+			#io{
+				margin-top:10px;
+				margin: 10px 10px;
+			}
+			
+            #pfooter
+            {
+                    position: absolute;
+					background: linear-gradient(to right, #00d2ff, #3a7bd5);
+					padding: 10px 0px;
+					width: 100%;
+					border-radius: 2px;
+					text-align: center;
+					/* margin-top: 10%; */
+					bottom: 1px;
+            }
+            #pfooter:hover
+            {
+                cursor: pointer;    
+            }
+            
+            .whitebackground
+			{
+                z-index: 0;
+                display: none;
+            }
+			#sofa
+			{
+				position: relative;
+			}
+
+			input[type = "text"]
+			{
+				margin:0px;	
+				padding:10px 0px;
+				font-size:20px;
+				
+			}
+
+
+
+            .airicon
+            {
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    margin: auto;
+                    margin-top: 10%;
+            }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

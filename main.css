@@ -1,0 +1,392 @@
+/********Neccessary Requirements**********/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: #f2f2f2;
+}
+
+.row
+{
+    display:flex;
+    width:100%;
+    margin:0;
+}
+
+.row::after
+{
+    
+    display:block;
+    clear:both;
+    content:"";
+}
+.col-1
+{
+    width:8.33%;
+}
+.col-2
+{
+    width:16.66%;
+}
+.col-3
+{
+    width:25%;
+}
+.col-4
+{
+    width:33.33%;
+}
+.col-5
+{
+    width:41.66%;
+}
+.col-6
+{
+    width:50%;
+}
+
+.col-7
+{
+    width:66.66%;
+}
+.col-8
+{
+    width:66.66%;
+}
+
+.col-9
+{
+    width:75%;
+}
+
+.col-10
+{
+    width:83.33%;
+}
+
+.col-11
+{
+    width:91.66%;
+}
+
+.col-12
+{
+    width:100%;
+}
+
+
+/********Nav Bar***********/
+
+			.navbar {
+				overflow : hidden;
+				background-color : #111;
+				top : 0 ;
+				right : 0;
+				position : sticky ;
+				z-index : 7;
+			}
+
+			.navbar a {
+				text-decoration : none;
+				padding : 17px 25px;
+                font-size: 16px;
+				color : white ;
+				float : left;
+				margin : 0px;
+			}
+
+			.navbar a:hover {
+				background-color : #aaa;
+				color : black;
+			}
+
+			.navbar a.right {
+				float : right;
+			}
+
+.dropdown {
+    display:none;
+}
+			
+			
+/*****Media query for navbar*******/
+			
+@media screen and (max-width:500px){
+    
+    .navbar a.navitems {
+        display:none;
+    }
+    
+    .navbar a.dropdown{
+        display:block;
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    
+}
+
+			
+/******Slides Below Nav Bar*********/
+
+            .slideContainer
+                {
+				position : relative;
+				max-width : 100%;
+				margin : auto;
+			}
+            
+            .notactive {
+					display : none;
+			}
+
+                
+			.mySlides > img {
+				height : 300px;
+			}
+            
+            .prev,.next
+				{
+				  text-decoration : none;
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  padding: 16px;
+                  margin-top:-40px;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 18px;
+                  transition: 1s ease;
+				  
+            }
+          .next
+            {
+                right:0;    
+            }
+			
+			.prev:hover,.next:hover {
+				background-color : rgba(0,0,0,0.6);
+			}
+                
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 3s;
+            }
+
+            @-webkit-keyframes fade {
+              0% {opacity: 0.2} 
+              50% {opacity: 1}
+                100%{opacity : 0.2}
+                
+            }
+
+            @keyframes fade {
+            0% {opacity: 0.2} 
+              50% {opacity: 1}
+                100%{opacity : 0.2}
+            }
+
+
+/*********STyling for Search form************/
+
+
+.hiddenformbutton{
+    display:none;
+}
+
+
+
+.tofrom{
+
+    position: absolute;
+    width: 950px;
+    top:20px;
+    left:0;
+    right:0;
+    opacity:0.95;
+    /*needed to center the box with left and right = 0*/
+    margin:auto;
+    
+    z-index: 5;
+
+}
+
+.tofrom:hover{
+    opacity:1;
+}
+
+.forminfo{
+    border-radius: 4px;
+    background-color: #ddd;
+}
+
+.formtext{
+    display: inline;
+    padding:30px 5px 30px 15px;
+}
+
+.formbox{
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.formbutton{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding:0px 30px;
+}
+
+
+.searchtext{
+    margin:5px;
+}
+
+
+/*********Images below slides************/
+.imgdisp{
+    position: relative;
+    margin:10px;
+    display: block;
+}
+
+.imgslide{
+    overflow: hidden;
+    display: block;
+    max-width:400px;
+    margin:15px; 
+    border-radius: 25px;
+}
+
+.imgdetails{
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: 15px;
+    right: 0;
+    max-width:400px;
+    background-color: #ddd;
+}
+
+.text
+	{
+		position : absolute;
+		bottom : 30px;
+		width : 100%;
+		margin : auto ;
+        text-align: center;
+        color:white;
+		font-size : 30px;
+        padding: 20px;
+              
+    }
+/*
+.imgdetails:hover{
+    display: block;
+    position: relative;
+    bottom: 110px;
+    left: 15px;
+    right: 0;
+    max-width:400px;
+    background-color: #ddd;
+}
+*/
+
+/********W3 overlay*********/
+
+.container {
+  position: relative;
+  width: 90%;
+  margin:25px;
+}
+
+.image {
+	    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 2px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+      border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 2px;
+  background-color: #ddd;
+  opacity:0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 30%;
+}
+
+.text {
+   color:black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contacts{
+	background-color:#111;
+	height : 100px;
+	width:100%;
+}
+
+/*
+.conthead{
+	color:#fff;
+	margin: 20px;
+	width:100%;
+	font-size: 30px;
+}
+*/
+
+.conttxt{
+    margin: 0px 70px;
+    padding: 50px 0px 0px 0px;
+}
+
+
+.links-l{
+    color:#fff;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.links-r{
+    float: right;
+    color:#fff;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.icon{
+    font-size: 25px;
+    margin:0px 10px;
+}
+
+html body div.hide{
+    opacity:1;
+}
+

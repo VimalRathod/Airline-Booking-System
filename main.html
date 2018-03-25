@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        
+             
+<!--  Nav Bar      -->
+		<div class = "navbar">
+			<a href = "#" id = "home"> Home </a>
+			<a class = "right navitems" href = "javascript:void(0);" onclick = "loginpage()"> Login </a>
+			<a class = "right navitems" href = "signup.html"> SignUp </a>
+			<a class = "navitems" href = "#contacts"> Contacts </a>
+			<a class = "navitems" href = "#about"> Deals </a>
+<!--
+            <a class = "dropdown" href = "javascript:void(0);" onclick = "dropdownmenu()">
+                	&#9776;
+            </a>
+-->
+		</div>
+        
+
+<!--  Slide Below Nav Bar       -->
+     <div class = "hide">
+            <div class="slideContainer">
+    <!--  Form For Searching          -->
+
+                    <div class = "tofrom">
+                        <div class = "forminfo">
+                            <p class = "formtext">From</p>
+                            <input class = "formbox" type="text" placeholder = "From..." name="frombox">
+                            <p class = "formtext">To</p>
+                            <input class = "formbox"  type="text" placeholder = "To..."  name="tobox">
+                            <p class = "formtext">Departure</p>
+                            <input class = "formbox"  type="date" name = "date">
+                           <button class = "formbutton" onclick = "searchFlights()">
+                               <p class = "searchtext"><span class = "searchglyph">&#x1F50D;</span>Search Flights</p>
+                            </button>
+                          </div>
+                    </div>
+
+
+
+
+    <!-- Form End            -->
+    <!-- Slides Start            -->
+                <div class="mySlides fade">
+                    <img src= "./img/hello.jpg" style="width: 100%" alt="Galaxy1">
+                </div>
+
+                <div class="mySlides notactive fade"> 
+                    <img src="./img/4.jpg" style = "width : 100%" alt="Galaxy2"> 
+                </div>
+
+                <div class="mySlides notactive fade">
+                    <img src="./img/3.jpg" style="width: 100%" alt="Galaxy3">
+                </div>
+                <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a href="#" class="next" onclick="plusSlides(1)">&#10095;</a>
+                <br>
+                <p id="demo"></p>
+            </div>
+    <!-- Slides End        -->
+    <!-- Images of Places        -->
+            <div id = "about" class = "row">
+                <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/2.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/3.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/4.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class = "row">
+                <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/5.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/6.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/7.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <div class = "row">
+                <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/8.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/9.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+                  <div class = "col-4">
+                    <div class="container">
+                        <img class="image" src ="./img/5.jpg" alt="img">
+                        <div class = "overlay">
+                            <div class = "text"> My Image </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id = "contacts" class = "contacts">
+    <!--
+                 <div class = "conthead">
+                    Contacts
+                </div>
+    -->
+                <div class = "conttxt">
+                    <a href="#" class = "links-l" style="text-decoration: none;">Flightbooking@gmail.com</a>
+                      <a href = "#" class = "links-r"><i class="fa fa-facebook-square icon"></i> Facebook</a> 
+                       <a  href = "#" class = "links-r"><i class="fa fa-twitter-square icon"></i>Twitter</a>
+                        <a  href = "#" class = "links-r"><i class="fa fa-instagram icon"></i>Instagram</a>
+                </div>
+            </div>
+    <!-- Script File       -->
+
+    </div>
+        <script>
+            var slideIndex = 1;
+            
+            showSlides(slideIndex);
+             setInterval(function(){ plusSlides(1); 
+                                 console.log(slideIndex)}, 3000);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1} 
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none"; 
+              }
+              slides[slideIndex-1].style.display = "block";
+                
+            }
+            
+            function loginpage()
+            {
+                var x = document.getElementsByClassName("hide");
+                x[0].style.opacity = "0.3";
+                alert("hello");
+            }
+		
+		</script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+body {
+/*	background-color : #f2f2f2;*/
+    height:100%;
+/*    background: linear-gradient(#3399ff,  #b3d9ff);*/
+    background: linear-gradient(#c653c6,  #8585ad);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+form {
+	margin-top : 5%;
+	/*text-align : center;*/
+}
+
+fieldset {
+	/*height : 300px;*/
+    box-shadow: 2px 3px 9px #000;
+	background-color : white;
+	margin :auto;
+	width : 35%;
+    border:none;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom:10px;
+	background-color : white;
+	font-weight : bold;
+	font-size : 30px;
+}
+span {
+	/*font-weight : bold;*/
+	font-size : 20px;
+}
+
+.input {
+	margin-right : 10px;
+	float:right;
+    padding: 8px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px #000;
+}
+
+.input:focus{
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
+
+.reset{
+        border-radius : 2px;
+		background-color : darkgreen;
+		color : white ;
+		margin-left : 50px; 
+		padding : 8px 25px;
+		font-size : 17px;
+}
+.submit {
+		border-radius : 2px;
+		background-color : Red;
+		color : white ;
+		margin-left : 150px; 
+		padding : 8px 30px;
+		font-size : 17px;
+}
+
+p {
+	margin-left : 10px;
+    margin-bottom: 30px;
+}
+
+p.lessgap{
+    margin-bottom: 10px;
+}
+
+.hov:hover{
+    padding : 13px 28px;
+}
